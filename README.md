@@ -144,5 +144,5 @@ The objective of this lab was to establish a cloud-based Security Operations Cen
 <h2>Key Takeaways:</h2>
 
 - <b>Rapid Discovery:</b> Once the Network Security Group rules were modified to allow all traffic, the virtual machine was discovered by automated internet scanners within hours, highlighting the speed at which exposed resources are targeted and the dangers of lacking security or accidental vulnerability creation.
-- <b>Global Threat Actor Origin: </b> Through the use of KQL and Geo-IP Watchlists, I observed that attack attempts originated from diverse geographic regions, with significant clusters appearing in.
+- <b>Global Threat Actor Origin: </b> Through the use of KQL and Geo-IP Watchlists, I observed that attack attempts originated from diverse geographic regions, with significant clusters appearing in the Netherlands, United States, and Southeast Asia.
 - <b>SIEM Benefits: </b> The lab proved that raw logs are difficult to interpret in isolation, but by using Workbooks in Sentinel, I was able to transform thousands of security alerts into a heat map for data visualization.
