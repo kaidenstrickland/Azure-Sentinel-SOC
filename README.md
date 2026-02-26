@@ -112,6 +112,9 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
  
 - <b>Purpose: To pair raw IP addresses with external geographic data, allowing the SIEM to identify the physical origin of attackers.</b>
 <p align="center">
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2ce1d394-3d65-478c-8a28-cdc707d5c7b1" />
+
+<p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0bbec7d0-feb3-4c98-af4b-1111e5a83342" />
 
 <h2>Step 2: Generate the Visual Map:</h2>
@@ -119,7 +122,9 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 - <b>Purpose: To transform KQL query results into a visual "Workbook" or Dashboard, providing a geographic map of global attacks.</b>
 
 <p align="center">
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8196f5b8-ea5b-4046-a15c-3e4ca1de011a" />
+<img width="975" height="347" alt="image" src="https://github.com/user-attachments/assets/6fe48fe1-9763-4851-a409-cc45787167bb" />
+<p align="center">
+<img width="975" height="500" alt="image" src="https://github.com/user-attachments/assets/8196f5b8-ea5b-4046-a15c-3e4ca1de011a" />
 
 <h2>After 12 Hours: </h2>
 <p align="center">
