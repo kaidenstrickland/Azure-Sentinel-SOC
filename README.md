@@ -114,8 +114,6 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0bbec7d0-feb3-4c98-af4b-1111e5a83342" />
 
-- <b>Credits for file: Josh Madakor/TheCyberRange </b>
-
 <h2>Step 2: Generate the Visual Map:</h2>
  
 - <b>Purpose: To transform KQL query results into a visual "Workbook" or Dashboard, providing a geographic map of global attacks.</b>
@@ -135,7 +133,6 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <p align="center">
 <img width="975" height="276" alt="image" src="https://github.com/user-attachments/assets/8cafc1b2-605d-4724-9a0e-9cc82fa92714" />
 
-- <b>Credits for Query: Josh Madakor/TheCyberRange </b>
 
 <h2>Final Summary</h2>
 The objective of this lab was to establish a cloud-based Security Operations Center (SOC) environment to observe, log, and visualize real-world cyberattacks. By intentionally deploying a vulnerable Windows Virtual Machine (Honeypot) and exposing it to the public internet, I successfully attracted automated brute-force activity. Utilizing Microsoft Sentinel, I collected security event data, combined it with geographic data via custom Watchlists, and produced a visual Attack Map. This project demonstrates a complete security workflow: from infrastructure hardening (and intentional weakening) to advanced threat visualization.
