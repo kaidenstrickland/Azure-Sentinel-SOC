@@ -36,14 +36,14 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 
 <h2>Step 2: Creating a Virtual Network</h2>
  
-- <b>Purpose: To create an isolated private network in the cloud where the VM can communicate with other Azure services.</b>
+- <b>To create an isolated private network in the cloud where the VM can communicate with other Azure services.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/90cd2232-c8a8-45f5-a5e5-ca0ca243d5ec" />
 
 
 <h2>Step 3: Creating the Virtual Machine / Honeypot</h2>
  
-- <b>Purpose: To act as the vulnerable target exposed to the internet to attract and record unauthorized access attempts.</b>
+- <b>To act as the vulnerable target exposed to the internet to attract and record unauthorized access attempts.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7810b4cc-85ff-40e7-9bcf-bb4155810dba" />
 
@@ -56,7 +56,7 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <h2>Section 2: The Honeypot Setup</h2>
 <h2>Step 1: Delete/Modify Network Security Group (NSG) Rules:</h2>
  
-- <b>Purpose: To bypass Azure’s default security rules, allowing all inbound traffic (Port 3389 and ICMP) from any source IP on the internet.</b>
+- <b>To bypass Azure’s default security rules, allowing all inbound traffic (Port 3389 and ICMP) from any source IP on the internet.</b>
 <p align="center">
 <img width="500" height="150" alt="image" src="https://github.com/user-attachments/assets/98051c35-8dda-4328-a590-60307091346c" />
 <p align="center">
@@ -64,26 +64,26 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 
 <h2>Step 2: RDP and Disable Guest Firewalls</h2>
  
-- <b>Purpose: To remove the final layer of defense within the Windows VM, ensuring that network traffic isn't blocked by the machine.</b>
+- <b>To remove the final layer of defense within the Windows VM, ensuring that network traffic isn't blocked by the machine.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2344326a-1215-4713-9658-386bff068ce3" />
 
 <h2>Step 3: Ping VM from Host:</h2>
  
-- <b>Purpose: To verify the honeypot is live and reachable from the public internet before beginning log collection.</b>
+- <b>To verify the honeypot is live and reachable from the public internet before beginning log collection.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/db5c94cf-3c11-4bfa-a71b-e6abf1290e8a" />
 
 <h2>Section 3: Logging and Event Generation</h2>
 <h2>Step 1: Generate Incorrect Logins</h2>
  
-- <b>Purpose: To manually create "Audit Failure" events (Event ID 4625) in the Windows Event Viewer, providing data to test the logging. </b>
+- <b>To manually create "Audit Failure" events (Event ID 4625) in the Windows Event Viewer, providing data to test the logging. </b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/23d474a7-4ed4-4d09-8ffe-0ae83762ea8c" />
 
 <h2>Step 2: View Events in Event Viewer</h2>
  
-- <b>Purpose: To confirm that the VM is successfully capturing the security logs locally before attempting to ship them to the cloud.</b>
+- <b>To confirm that the VM is successfully capturing the security logs locally before attempting to ship them to the cloud.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/29cce382-b1f2-44ee-b428-a1ce462f5c53" />
   
@@ -94,13 +94,13 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <h2>Section 4: SIEM & Data logging through Microsoft Sentinel</h2>
 <h2>Step 1: Deploy Log Analytics Workspace (LAW) and Add Sentinel:</h2>
  
-- <b>Purpose: To create the centralized database where all raw security logs will be stored and queried using KQL.</b>
+- <b>To create the centralized database where all raw security logs will be stored and queried using KQL.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/24501a32-60ef-4d82-b498-f6ea36348988" />
 
 <h2>Step 2: Install Windows Security Events / via AMA:</h2>
  
-- <b>Purpose: To enable the specific Microsoft Sentinel bridge that allows the workspace to recognize and receive streamed security events.</b>
+- <b>To enable the specific Microsoft Sentinel bridge that allows the workspace to recognize and receive streamed security events.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4df9bc96-7413-44ba-b52e-9b80a07240c9" />
 
@@ -110,7 +110,7 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <h2>Section 5: Data Visualization</h2>
 <h2>Step 1: Create Watchlist (IP Geo-location)</h2>
  
-- <b>Purpose: To pair raw IP addresses with external geographic data, allowing the SIEM to identify the physical origin of attackers.</b>
+- <b>To pair raw IP addresses with external geographic data, allowing the SIEM to identify the physical origin of attackers.</b>
 <p align="center">
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2ce1d394-3d65-478c-8a28-cdc707d5c7b1" />
 
@@ -119,7 +119,7 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 
 <h2>Step 2: Generate the Visual Map:</h2>
  
-- <b>Purpose: To transform KQL query results into a visual "Workbook" or Dashboard, providing a geographic map of global attacks.</b>
+- <b>To transform KQL query results into a visual "Workbook" or Dashboard, providing a geographic map of global attacks.</b>
 
 <p align="center">
 <img width="975" height="347" alt="image" src="https://github.com/user-attachments/assets/6fe48fe1-9763-4851-a409-cc45787167bb" />
