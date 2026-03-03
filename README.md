@@ -30,7 +30,7 @@ In this lab, I deployed a "Honeypot" VM with disabled firewalls and open RDP por
 <p align="left">
 <h2>Step 1: Creating the Resource Group</h2>
  
-- <b>Purpose: Purpose: To provide a logical container for all lab resources, ensuring they can be managed from a single point.</b>
+- <b>Purpose: To provide a logical container for all lab resources, ensuring they can be managed from a single point.</b>
 <p align="center">
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e50fe811-c15f-4003-be9a-0134860902dc" />
 
